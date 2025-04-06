@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find MyDoc - Home</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url(c.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/* Header */
+.header {
+    background-color: #094fff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+  
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #141cff;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #0e2efe;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: url('banner.jpg') no-repeat center center/cover;
+    color: rgb(23, 116, 221);
+    font-size: 28px;
+    font-style:initial;
+}
+
+.search-btn {
+    background-color: #1462ff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #9dbeff;
+}
+
+/* Doctor Results Section */
+.results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(45% - 15px);
+    background-color: #ffb6c1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    border-left: 5px solid #ff1493;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.result img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.result:hover {
+    transform: scale(1.05);
+    background-color: #26b1c9;
+}
+.hero p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Doctor Details */
+.result-details {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: #ff1493;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #333;
+    margin: 2px 0;
+}
+.about1{
+    font-size: 25px;
+
+}
+.about1 h1 {
+    color: #1d83e9; /* Dark blue color */
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* About Us Section */
+.about-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+.about-section h2 {
+    color: #ff1493;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #ff4646;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+.about1 h2{
+    font-size: 35px;
+    color: #767676;
+}
+
+.about-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ff1493;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .result {
+        flex: 1 1 calc(100% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .result {
+        flex: 1 1 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        Find MyDoc
+    </header>
+
+    <section class="hero">
+        <h1>Find the Best Doctors Near You</h1>
+        <p>Search for top-rated doctors based on your location and specialization.</p>
+        <br>
+        <a href="doctor_seacrch.html">
+            <button class="search-btn">Find a Doctor</button>
+        </a>
+        <br> <br>
+        <p>Welcome to Find My Doc, your trusted platform for connecting with top healthcare professionals effortlessly.
+             We understand that finding the right doctor at the right time can be overwhelming, and that’s why we’re here to make the process simple, fast, and stress-free. Whether you're looking for a specialist in your city or need urgent medical consultation, our platform helps you discover highly-rated doctors based on location, expertise, and patient reviews.</p>
+    </section>
+    <section id="about1" class="about1">
+        <br> <br> <br>
+        <h1>About Us</h1>
+        <h2>Our Mission</h2>
+        <p> Our mission is to simplify the process of finding trusted doctors by providing a seamless and user-friendly experience.
+             We aim to bridge the gap between patients and healthcare professionals, making quality medical care accessible to all.</p> 
+             <h2>Why Choose Find MyDoc?</h2> 
+             <p>✅ Easy Doctor Search: Find doctors based on location and medical specialization.<br>
+                ✅ Comprehensive Profiles: Access detailed information about doctors, including qualifications and experience.<br>
+                ✅ User-Friendly Interface: A simple and intuitive design for effortless navigation.<br>
+                ✅ Mobile-Friendly: Optimized for all devices to ensure accessibility anytime, anywhere.</p>
+             <br><br><br>       
+    </section>
+
+
+</body>
+</html>
